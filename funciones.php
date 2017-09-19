@@ -18,11 +18,11 @@
 
 			function maximoEntero ($arr){
 
-				if($arr != ""){
+				if(count($arr)>0){
 
 					$a = $arr[0];
 
-						for ($i=1; $i <count($arr) ; $i++) { 
+						for ($i=1; $i <count($arr) ; $i++) {
 
 							if($a < $arr[$i]){
 
@@ -79,15 +79,15 @@
 
 			function menorEntero ($arr){
 
-				if($arr != ""){
+				if(count($arr)>0){
 
 					$a = $arr[0];
 
-						for ($i=0; $i <count($arr) ; $i++) {
+						for ($i=1; $i <count($arr) ; $i++) {
 
-							if($a > $arr[$i+1]){
+							if($a > $arr[$i]){
 
-								$a = $arr[$i+1];
+								$a = $arr[$i];
 							}
 						}
 
@@ -138,30 +138,32 @@
 
 			<?php
 
-				function secuencia($arr){
+				// function secuencia($arr){
+				//
+				// 	$str = str_ireplace("<->", " ", $arr);
+				//
+				// 		for ($i=0; $i <strlen($str) ; $i++) {
+				//
+				// 			if($str[$i]!=" "){
+				//
+				// 			 	return false;
+				// 			}
+				// 		}
+				//
+				// 	$del = " ";
+				// 	$exp = explode($del, $str);
+				// 	$ok = strlen($exp[0]);
+				// 	$ok2 = strlen($exp[1]);
+				//
+				// 		if($ok-$ok2 === 1 || $ok-$ok2 === -1 || $ok-$ok2 === 0){
+				// 			return true;
+				// 		}else{
+				// 			return false;
+				// 		}
+				//
+				// }
 
-					$str = str_ireplace("<->", " ", $arr);
-
-						for ($i=0; $i <strlen($str) ; $i++) {
-
-							if($str[$i]!=" "){
-
-							 	return false;
-							}
-						}
-
-					$del = " ";
-					$exp = explode($del, $str);
-					$ok = strlen($exp[0]);
-					$ok2 = strlen($exp[1]);
-
-						if($ok-$ok2 === 1 || $ok-$ok2 === -1 || $ok-$ok2 === 0){
-							return true;
-						}else{
-							return false;
-						}
-
-				}
+				
 			?>
 
 			<table>
