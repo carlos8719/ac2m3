@@ -1,5 +1,6 @@
 <?php
 
+
 require_once "funciones.php";
 use PHPUnit\Framework\TestCase;
 
@@ -7,61 +8,60 @@ class problemaTresTest extends TestCase{
 
 	/*Definir los test que se van hacer*/
 
-	public function testNoExisteLaSecuencia (){
+	public function testStringVacio{
 
-		$a = "aaa<->bbb";
-		$res = secuencia ($a);
-		$this->assertFalse(True);
-
-	}
-
-	public function testSecuenciaTrue (){
-
-		$a = "aaa<->bbb";
-		$res = secuencia ($a);
-		$this-> assertTrue(false);
+		$a = "";
+		$res = secuencia($a);
+		$this->assertFalse($res);
 
 	}
 
+	public function testStringSoloSecuencia{
 
-	public function testSecuenciaDosTrue (){
-
-		$a = "aaaa<->bbb";
-		$res = secuencia ($a);
-		$this-> assertTrue(false);
-
-	}
-
-	public function testSecuenciaTresTrue (){
-
-		$a = "aaa<->bbbb";
-		$res = secuencia ($a);
-		$this-> assertTrue(false);
+		$a = "<->";
+		$res = secuencia($a);
+		$this->assertTrue($res);
 
 	}
 
-	public function testSecuenciaFalse (){
+	public function testSecuenciaMedio{
 
-		$a = "aaaaa<->bbb";
-		$res = secuencia ($a);
-		$this-> assertFalse(true);
-
-	}
-
-	public function testSecuenciaDosFalse (){
-
-		$a = "aaa<->bbbbb";
-		$res = secuencia ($a);
-		$this-> assertFalse(true);
+		$a = "vvv<->aaa";
+		$res = secuencia($a);
+		$this->assertTrue($res);
 
 	}
 
+	public function testSecuenciaMedioDos{
 
+		$a = "vvvv<->aaa";
+		$res = secuencia($a);
+		$this->assertTrue($res);
 
-	
+	}
+	public function testSecuenciaMedioTres{
 
+		$a = "vvv<->aaaa";
+		$res = secuencia($a);
+		$this->assertTrue($res);
 
+	}
+
+	public function testSecuenciaMedioFalse{
+
+		$a = "vvvvv<->aaa";
+		$res = secuencia($a);
+		$this->assertFalse($res);
+
+	}
+
+	public function testSecuenciaMedioFalseDos{
+
+		$a = "vvv<->aaaaa";
+		$res = secuencia($a);
+		$this->assertFalse($res);
+
+	}
 }
 
-
- ?>
+?>

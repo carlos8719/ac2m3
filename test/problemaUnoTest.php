@@ -1,4 +1,6 @@
 <?php 
+
+
 require_once "funciones.php";
 use PHPUnit\Framework\TestCase;
 
@@ -60,11 +62,9 @@ class problemaUnoTest extends TestCase{
 
 		$a = [];
 		$res = maximoEntero ($a);
-		$this->assertFalse(true);
+		$this->assertFalse($res);
 
 	}
-
-
 }
 
 ?>

@@ -13,6 +13,7 @@
 		<p>Programar una función que busque el máximo de un array de enteros recibido como argumento.</p>
 
 		<p><span>Ejemplo:</span> max([3,4,6,1,65,-3,6,10]): 65 </p>
+		
 
 			<?php
 
@@ -140,26 +141,36 @@
 
 				function secuencia($arr){
 
-					$str = str_ireplace("<->", " ", $arr);
+					if($arr != ""){
 
-						for ($i=0; $i <strlen($str) ; $i++) {
+						$i = count($arr)/2;
 
-							if($str[$i]!=" "){
+						if($arr[$i]=="-"){
 
-							 	return false;
-							}
-						}
+							$a = count($arr)/2;
 
-					$del = " ";
-					$exp = explode($del, $str);
-					$ok = strlen($exp[0]);
-					$ok2 = strlen($exp[1]);
+						}elseif($arr[$i+1]=="-"){
 
-						if($ok-$ok2 === 1 || $ok-$ok2 === -1 || $ok-$ok2 === 0){
-							return true;
+							$a = count($arr)/2+1;
+
+						}elseif($cad[$i-1]=="-"){
+
+							$a= count($arr)/2-1;
+
 						}else{
 							return false;
+
 						}
+
+						if($arr[$a-1] === "<" && $cad[$a+1] === ">"){
+
+							return true;
+
+						}else{
+
+							return false;
+						}
+					}
 
 				}
 
@@ -200,6 +211,13 @@
 
 			<p><span>Ejemplo 1:</span> espejoMayor([1, 2, 3, 8, 9, 3, 2, 1, 5]): 3</p>
 			<p><span>Ejemplo 2:</span> espejoMayor([1, 2, 1, 4]): 3</p>
+
+			<?php
+				function espejoEspejito(){
+
+					//TODO Falta Completar
+				}
+			?>
 
 			<table>
 				<tr>

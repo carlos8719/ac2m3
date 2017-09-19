@@ -1,4 +1,6 @@
 <?php 
+
+
 require_once "funciones.php";
 use PHPUnit\Framework\TestCase;
 
@@ -60,10 +62,9 @@ class problemaDosTest extends TestCase{
 
 		$a = [];
 		$res = menorEntero ($a);
-		$this->assertFalse(true);
+		$this->assertFalse($res);
 
 	}
-
-
 }
+
 ?>
