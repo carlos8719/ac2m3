@@ -138,32 +138,32 @@
 
 			<?php
 
-				// function secuencia($arr){
-				//
-				// 	$str = str_ireplace("<->", " ", $arr);
-				//
-				// 		for ($i=0; $i <strlen($str) ; $i++) {
-				//
-				// 			if($str[$i]!=" "){
-				//
-				// 			 	return false;
-				// 			}
-				// 		}
-				//
-				// 	$del = " ";
-				// 	$exp = explode($del, $str);
-				// 	$ok = strlen($exp[0]);
-				// 	$ok2 = strlen($exp[1]);
-				//
-				// 		if($ok-$ok2 === 1 || $ok-$ok2 === -1 || $ok-$ok2 === 0){
-				// 			return true;
-				// 		}else{
-				// 			return false;
-				// 		}
-				//
-				// }
+				function secuencia($arr){
 
-				
+					$str = str_ireplace("<->", " ", $arr);
+
+						for ($i=0; $i <strlen($str) ; $i++) {
+
+							if($str[$i]!=" "){
+
+							 	return false;
+							}
+						}
+
+					$del = " ";
+					$exp = explode($del, $str);
+					$ok = strlen($exp[0]);
+					$ok2 = strlen($exp[1]);
+
+						if($ok-$ok2 === 1 || $ok-$ok2 === -1 || $ok-$ok2 === 0){
+							return true;
+						}else{
+							return false;
+						}
+
+				}
+
+
 			?>
 
 			<table>
