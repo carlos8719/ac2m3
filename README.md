@@ -9,4 +9,4 @@
 
 
 
-`*Entrega 2 del modulo 3*`
+`Entrega 2 del modulo 3`
