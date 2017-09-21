@@ -13,7 +13,7 @@
 		<p>Programar una función que busque el máximo de un array de enteros recibido como argumento.</p>
 
 		<p><span>Ejemplo:</span> max([3,4,6,1,65,-3,6,10]): 65 </p>
-		
+
 
 			<?php
 
@@ -135,48 +135,51 @@
 		<p>Dada una cadena, implementar una función que diga (true o false) si la secuencia "<->" aparece en medio. Se considerará que está en medio si el número de caracteres que hay antes y después difieren como mucho en una unidad.</p>
 
 		<p><span>Ejemplo:</span>flechaMedio("xaj<->bb"): true </p>
-			
-			Problema 3 
+
+			Problema 3
  <?php
 
   $txt="asd<->asdf";
 
-  function BuscarCoincidenciaEnUnString($txt){
-    if($txt !=""){
-    $i = strlen($txt)/2;
-    var_dump($i);
-    $i = intval($i);
-    
-    if($txt[$i]=="-"){
-      $cadena = $i;
-      var_dump($cadena);
+	  function secuencia($string){
+
+	    if($string !=""){
+		    $i = strlen($string)/2;
+		    var_dump($i);
+		    $i = intval($i);
+
+		    if($string[$i]=="-"){
+		      $cadena = $i;
+		      var_dump($cadena);
 
 
-    }elseif($txt[$i+1]=="-"){
-      $cadena =$i;
-      var_dump($cadena);
+		    }elseif($string[$i+1]=="-"){
+		      $cadena =$i;
+		      var_dump($cadena);
 
 
-    }elseif($txt[$i-1] == "-"){
-      $cadena = $i;
-      var_dump($cadena);
+		    }elseif($string[$i-1] == "-"){
+		      $cadena = $i;
+		      var_dump($cadena);
 
 
-    }else{
+		    }else{
 
-      return false;
-    }
+		      return false;
+		    }
 
-    if($txt[$i-1] == "<" && $txt[$i+1] == ">"){
-      return true;
-    }else{
-      return false;
-    }
-  }
-}
+		    if($string[$i-1] == "<" && $string[$i+1] == ">"){
+		      return true;
+		    }else{
+		      return false;
+		    }
+		  }
+		}
+
+	?>
 
 
-			
+
 
 			<table>
 				<tr>

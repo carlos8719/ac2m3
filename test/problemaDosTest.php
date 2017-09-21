@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 
 require_once "funciones.php";
@@ -20,7 +20,7 @@ class problemaDosTest extends TestCase{
 
 		$a = [-3,-5,-6,-1,-56];
 		$res = menorEntero ($a);
-		$this->assertEquals(-1,$res);
+		$this->assertEquals(-56,$res);
 
 	}
 
@@ -31,13 +31,13 @@ class problemaDosTest extends TestCase{
 		$this->assertEquals(-56,$res);
 
 	}
-	
-	
+
+
 	public function testArrayCero(){
 
 		$a = [0];
-    	$res = menorEntero ($a);
-   		$this->assertEquals(0,$res);
+    $res = menorEntero ($a);
+   	$this->assertEquals(0,$res);
 
 
 	}
@@ -57,7 +57,7 @@ class problemaDosTest extends TestCase{
 		$this->assertEquals (1,$res);
 	}
 
-	
+
 	public function testArrayVacio(){
 
 		$a = [];
