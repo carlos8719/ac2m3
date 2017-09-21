@@ -135,47 +135,48 @@
 		<p>Dada una cadena, implementar una función que diga (true o false) si la secuencia "<->" aparece en medio. Se considerará que está en medio si el número de caracteres que hay antes y después difieren como mucho en una unidad.</p>
 
 		<p><span>Ejemplo:</span>flechaMedio("xaj<->bb"): true </p>
+			
+			Problema 3 
+ <?php
+
+  $txt="asd<->asdf";
+
+  function BuscarCoincidenciaEnUnString($txt){
+    if($txt !=""){
+    $i = strlen($txt)/2;
+    var_dump($i);
+    $i = intval($i);
+    
+    if($txt[$i]=="-"){
+      $cadena = $i;
+      var_dump($cadena);
 
 
-			<?php
-
-				function secuencia($arr){
-
-					if($arr != ""){
-
-						$i = count($arr)/2;
-
-						if($arr[$i]=="-"){
-
-							$a = count($arr)/2;
-
-						}elseif($arr[$i+1]=="-"){
-
-							$a = count($arr)/2+1;
-
-						}elseif($cad[$i-1]=="-"){
-
-							$a= count($arr)/2-1;
-
-						}else{
-							return false;
-
-						}
-
-						if($arr[$a-1] === "<" && $cad[$a+1] === ">"){
-
-							return true;
-
-						}else{
-
-							return false;
-						}
-					}
-
-				}
+    }elseif($txt[$i+1]=="-"){
+      $cadena =$i;
+      var_dump($cadena);
 
 
-			?>
+    }elseif($txt[$i-1] == "-"){
+      $cadena = $i;
+      var_dump($cadena);
+
+
+    }else{
+
+      return false;
+    }
+
+    if($txt[$i-1] == "<" && $txt[$i+1] == ">"){
+      return true;
+    }else{
+      return false;
+    }
+  }
+}
+
+
+			
 
 			<table>
 				<tr>
