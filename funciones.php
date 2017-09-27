@@ -139,7 +139,7 @@
 			Problema 3
  <?php
 
-  $txt="asd<->asdf";
+  $string ="asd<->asdf";
 
 	  function secuencia($string){
 
@@ -168,7 +168,7 @@
 		      return false;
 		    }
 
-		    if($string[$i-1] == "<" && $string[$i+1] == ">"){
+		    if($cadena[$i-1] == "<" && $cadena[$i+1] == ">"){
 		      return true;
 		    }else{
 		      return false;
@@ -217,10 +217,41 @@
 			<p><span>Ejemplo 2:</span> espejoMayor([1, 2, 1, 4]): 3</p>
 
 			<?php
-				function espejoEspejito(){
 
-					//TODO Falta Completar
+				function espejoEspejito($arr){
+
+					$cadlen = count($arr);
+					$cadMayor = 0;
+
+					for ($i=0; $i <$cadlen ; $i++) { 
+						for ($j=$cadlen; $j >0 ; $j--){ 
+							if($arr[$i]===cad[$j]){
+								$posibleMayor = contarCoincidencias($arr, $i, $j, $cadlen);
+								if($posibleMayor>cadMayor){
+									$cadMayor = $posibleMayor;
+								}
+
+							}
+						}
+					}
+
+				return $cadMayor;
+
 				}
+
+				function contar($arr, $i, $j, $len){
+
+					$contar = 0;
+
+					while($arr[$i]==cad[$j] && $i<$len && j>=0){
+						$contar++;
+						$i++;
+						$j--;
+					}
+					return $contar;
+				}
+
+
 			?>
 
 			<table>
