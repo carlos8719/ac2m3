@@ -1,0 +1,133 @@
+*{
+	font-family: arial;
+	padding: 0;
+	margin:0;
+}
+
+body{
+	width:100%;
+	background-color: white;
+}
+
+header{
+	position: relative;
+	background-color: white;
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+h1{	
+	position: relative;
+	padding-top: 20px;
+	color:black;
+	font-size: 100px;
+	text-align: center;
+}
+
+main{
+	
+	position: relative;
+	margin: 0 auto;
+	width: 75%;
+	top: 40px;
+	margin-bottom: 70px;
+	padding: 20px;
+	
+}
+
+h2{
+	color:grey;
+	font-size: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+p{
+	margin-left: 20px;
+	margin-bottom: 5px;
+}
+
+p span {
+	font-weight: bold;
+}
+
+ table, td, th{
+        border-bottom: 1px solid cornflowerblue;
+        border-collapse: collapse;
+    }
+    td{
+    	/*text-align: center;*/
+        padding: 20px;
+       
+    }
+    tr{
+        text-align: left;
+    }
+    th{
+        padding: 25px;
+        text-align: center;
+        
+        }
+    
+    }
+   
+    td:last-child{
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        
+    }
+
+	td:nth-child(2){
+	    
+	    background-color: gray;  
+	    color:white;
+	    text-align: center;
+	    width: 5px;
+	    
+	    
+	    
+	}
+
+	td:nth-child(3){
+	    
+	    color:black;
+	background-color: white;
+	}
+
+	
+	/*primero columna*/
+
+	td:nth-child(1){
+
+	    width: 120px;
+	    font-size: 12px;
+	    text-align: center;
+	    color:black;
+	    font-weight: bold;}
+
+	table{
+		
+	    margin:0 auto;
+	    padding:15px;
+	    margin-bottom: 50px;
+	    margin-top: 50px;
+	    border-bottom: 2px solid black;
+	    border-top: 2px solid black;
+	}
+footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding: 20px;
+	background-color: black;
+}
+
+.nombre{
+
+	color:white;
+	float: right;
+	padding-right: 50px;
+}
+  
