@@ -16,20 +16,7 @@ class problemaCuatroTest extends TestCase{
 		$this->assertFalse($res);
 	}
 
-	public function testArrayLetras(){
-
-		$a =['a','v','g','t','h'];
-		$res = espejoEspejito($a);
-		$this->assertFalse($res);
-	}
-
-	public function testArrayNumerosYLetras(){
-
-		$a =['a','v',8,'t',5];
-		$res = espejoEspejito($a);
-		$this->assertFalse($res);
-	}
-
+	
 	public function testArrayContiguos(){
 
 		$a =[1,2,3,8,9,3,2,1,5];
@@ -48,14 +35,14 @@ class problemaCuatroTest extends TestCase{
 
 		$a =[1,3,3,8,9,3,2,0,5];
 		$res = espejoEspejito($a);
-		$this->assertFalse($res);
+		$this->assertEquals(0, $res);
 	}
 
 	public function testArrayNoContiguosDos(){
 
 		$a =[2,9,5,7];
 		$res = espejoEspejito($a);
-		$this->assertFalse($res);
+		$this->assertEquals(0, $res);
 	}
 
 }
