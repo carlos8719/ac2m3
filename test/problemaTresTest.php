@@ -8,7 +8,7 @@ class problemaTresTest extends TestCase{
 
 	/*Definir los test que se van hacer*/
 
-	public function testStringVacio{
+	public function testStringVacio(){
 
 		$a = "";
 		$res = secuencia($a);
@@ -16,7 +16,7 @@ class problemaTresTest extends TestCase{
 
 	}
 
-	public function testStringSoloSecuencia{
+	public function testStringSoloSecuencia(){
 
 		$a = "<->";
 		$res = secuencia($a);
@@ -24,7 +24,7 @@ class problemaTresTest extends TestCase{
 
 	}
 
-	public function testSecuenciaMedio{
+	public function testSecuenciaMedio(){
 
 		$a = "vvv<->aaa";
 		$res = secuencia($a);
@@ -32,22 +32,15 @@ class problemaTresTest extends TestCase{
 
 	}
 
-	public function testSecuenciaMedioDos{
+	public function testSecuenciaMedioDos(){
 
 		$a = "vvvv<->aaa";
 		$res = secuencia($a);
 		$this->assertTrue($res);
 
 	}
-	public function testSecuenciaMedioTres{
-
-		$a = "vvv<->aaaa";
-		$res = secuencia($a);
-		$this->assertTrue($res);
-
-	}
-
-	public function testSecuenciaMedioFalse{
+	
+	public function testSecuenciaMedioFalse(){
 
 		$a = "vvvvv<->aaa";
 		$res = secuencia($a);
@@ -55,7 +48,7 @@ class problemaTresTest extends TestCase{
 
 	}
 
-	public function testSecuenciaMedioFalseDos{
+	public function testSecuenciaMedioFalseDos(){
 
 		$a = "vvv<->aaaaa";
 		$res = secuencia($a);

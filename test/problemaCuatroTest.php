@@ -33,7 +33,7 @@ class problemaCuatroTest extends TestCase{
 
 	public function testArrayNoContiguos(){
 
-		$a =[1,3,3,8,9,3,2,0,5];
+		$a =[1,3,4,8,9,7,2,0,5];
 		$res = espejoEspejito($a);
 		$this->assertEquals(0, $res);
 	}

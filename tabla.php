@@ -142,11 +142,7 @@
 					<td>True</td>
 					<td>Test que devuelve <b>true</b>, esta justo en medio de la secuencia tiene tres caracteres a su izquierda y cuatro a la derecha y como puede variar en una posición és <b>true</b>.</td>
 				</tr>
-				<tr>
-					<td>$a = "vvvv<->aaa";</td>
-					<td>True</td>
-					<td>Test que devuelve <b>true</b>, esta justo en medio de la secuencia tiene cuatro caracteres a su izquierda y tres a la derecha y como puede variar en una posición és <b>true</b>.</td>
-				</tr>
+				
 				<tr>
 					<td>$a = "vvvvv<->aaa";</td>
 					<td>False</td>
@@ -164,7 +160,7 @@
 			<p>Una sección de "espejo" en una matriz es un grupo de elementos contiguos tales que en algún lugar de la matriz, el mismo grupo aparece en el orden inverso. Devolver el tamaño de la sección espejo más grande que se encuentra en la matriz dada.</p>
 
 			<p><span>Ejemplo 1:</span> espejoMayor([1, 2, 3, 8, 9, 3, 2, 1, 5]): <span>3</span></p>
-			<p><span>Ejemplo 2:</span> espejoMayor([1, 2, 1, 4]): 3</p>
+			<p><span>Ejemplo 2:</span> espejoMayor([1, 2, 1, 4]): <span>3</span></p>
 
 				<table>
 					<tr>
